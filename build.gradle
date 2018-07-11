@@ -2,6 +2,7 @@ plugins {
     id "java"
     id "edu.wpi.first.GradleRIO" version "2018.06.21"
     id "eclipse"
+    id "idea"
 }
 
 def ROBOT_CLASS = "frc.team4931.robot.Robot"
