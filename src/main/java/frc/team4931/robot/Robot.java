@@ -3,8 +3,8 @@ package frc.team4931.robot;
 import edu.wpi.first.wpilibj.IterativeRobot;
 
 public class Robot extends IterativeRobot {
-    @Override
-    public void robotInit() {
-        System.out.println("Hello World! Beep Boop!");
-    }
+  @Override
+  public void robotInit() {
+    System.out.println("Hello World! Beep Boop!");
+  }
 }
