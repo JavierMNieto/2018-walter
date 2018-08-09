@@ -12,7 +12,7 @@ public class Roller extends Subsystem {
 	private static final double SPIT_SPEED = 1;
 	private WPI_TalonSRX rollerMotor;
 	/**
-	 * 1 for suck, -1 for spit, 0 for stop
+	 * 1 for intake, -1 for expell, 0 for stop
 	 */
 	private int direction = 0;
 	
