@@ -18,7 +18,7 @@ public class Robot extends IterativeRobot {
     operatorInput = new OperatorInput();
     
     arm = new Arm();
-    roller = new roller();
+    roller = new Roller();
     
     System.out.println("Hello World! Beep Boop!");
   }
