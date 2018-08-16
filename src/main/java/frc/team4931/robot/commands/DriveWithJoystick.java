@@ -1,9 +1,9 @@
-package commands;
+package frc.team4931.robot.commands;
 
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.command.Command;
 import frc.team4931.robot.Robot;
-import subsystems.Drivetrain;
+import frc.team4931.robot.subsystems.Drivetrain;
 
 public class DriveWithJoystick extends Command {
   private Joystick joystick;
