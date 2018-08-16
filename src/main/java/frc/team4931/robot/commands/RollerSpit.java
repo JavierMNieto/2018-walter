@@ -1,25 +1,21 @@
-
-
 package frc.team4931.robot.commands;
 
+import edu.wpi.first.wpilibj.command.Command;
 import frc.team4931.robot.Robot;
 
-import edu.wpi.first.wpilibj.command.Command;
+public class RollerSpit extends Command{
 
-public class RollerSuck extends Command {
-
-	public RollerSuck() {
+	public RollerSpit() {
 		setInterruptible(false);
 	}
-	@Override
 	protected boolean isFinished() {
 		// TODO Auto-generated method stub
 		return true;
 
 	}
 
-	@Override
 	protected void initialize() {
 		Robot.roller.suck();
 	}
 }
+
