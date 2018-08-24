@@ -5,18 +5,17 @@ import frc.team4931.robot.Robot;
 
 public class RollerSuck extends Command {
 
-  public RollerSuck() {
-    setInterruptible(false);
-  }
+	public RollerSuck() {
+		setInterruptible(false);
+	}
+	@Override
+	protected boolean isFinished() {
+		return true;
 
-  @Override
-  protected boolean isFinished() {
-    // TODO Auto-generated method stub
-    return true;
-  }
+	}
 
-  @Override
-  protected void initialize() {
-    Robot.roller.suck();
-  }
+	@Override
+	protected void initialize() {
+		Robot.roller.suck();
+	}
 }
