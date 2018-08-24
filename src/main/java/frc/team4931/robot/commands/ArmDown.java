@@ -5,15 +5,15 @@ import frc.team4931.robot.Robot;
 
 public class ArmDown extends Command {
 
-    public ArmDown (){
-        setInterruptible(false);
-    }
+  public ArmDown() {
+    setInterruptible(false);
+  }
 
-    protected boolean isFinished(){
-        return true;
-    }
+  protected boolean isFinished() {
+    return true;
+  }
 
-    protected void initialize(){
-        Robot.arm.down();
-    }
+  protected void initialize() {
+    Robot.arm.down();
+  }
 }

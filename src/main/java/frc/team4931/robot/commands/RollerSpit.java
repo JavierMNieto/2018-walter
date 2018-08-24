@@ -3,7 +3,8 @@ package frc.team4931.robot.commands;
 import edu.wpi.first.wpilibj.command.Command;
 import frc.team4931.robot.Robot;
 
-public class RollerSpit extends Command{
+public class RollerSpit extends Command {
+
 
 	public RollerSpit() {
 		setInterruptible(false);
@@ -19,4 +20,3 @@ public class RollerSpit extends Command{
 		Robot.roller.spit();
 	}
 }
-

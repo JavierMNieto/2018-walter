@@ -1,10 +1,7 @@
-
-
 package frc.team4931.robot.commands;
 
-import frc.team4931.robot.Robot;
-
 import edu.wpi.first.wpilibj.command.Command;
+import frc.team4931.robot.Robot;
 
 public class RollerSuck extends Command {
 
