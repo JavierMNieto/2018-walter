@@ -14,6 +14,6 @@ public class ArmDown extends Command {
     }
 
     protected void initialize(){
-        Robot.arm.up();
+        Robot.arm.down();
     }
 }
