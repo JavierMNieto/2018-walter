@@ -13,7 +13,6 @@ public class RollerSuck extends Command {
 	}
 	@Override
 	protected boolean isFinished() {
-		// TODO Auto-generated method stub
 		return true;
 
 	}
