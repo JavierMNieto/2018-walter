@@ -1,9 +1,10 @@
-package subsystems;
+package frc.team4931.robot.subsystems;
 
 import com.ctre.phoenix.motorcontrol.can.WPI_TalonSRX;
 
 import edu.wpi.first.wpilibj.DigitalInput;
 import edu.wpi.first.wpilibj.command.Subsystem;
+import frc.team4931.robot.RobotMap;
 
 
 
@@ -18,8 +19,8 @@ public class Roller extends Subsystem {
 	
 	private DigitalInput beam;
 	public Roller() {
-		rollerMotor = new WPI_TalonSRX(0); 
-		beam = new DigitalInput(0); 
+		rollerMotor = new WPI_TalonSRX(RobotMap.ROLLER); 
+		beam = new DigitalInput(RobotMap.THROUGH_BEAM); 
 	}
 
 	@Override

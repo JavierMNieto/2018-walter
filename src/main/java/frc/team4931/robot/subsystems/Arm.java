@@ -1,8 +1,9 @@
-package subsystems;
+package frc.team4931.robot.subsystems;
 
 import com.ctre.phoenix.motorcontrol.can.WPI_TalonSRX;
 
 import edu.wpi.first.wpilibj.command.Subsystem;
+import frc.team4931.robot.RobotMap;
 
 public class Arm extends Subsystem {
 	private static final double UP_SPEED = 1;
@@ -10,7 +11,7 @@ public class Arm extends Subsystem {
 	private WPI_TalonSRX armMotor;
 	
 	public Arm() {
-		armMotor = new WPI_TalonSRX(0); //FIXME put real value
+		armMotor = new WPI_TalonSRX(RobotMap.ARM); //FIXME put real value
 	}
 	
 	@Override
