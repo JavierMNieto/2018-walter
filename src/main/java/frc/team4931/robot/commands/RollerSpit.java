@@ -8,12 +8,13 @@ public class RollerSpit extends Command{
 	public RollerSpit() {
 		setInterruptible(false);
 	}
+	
+	@Override
 	protected boolean isFinished() {
-		// TODO Auto-generated method stub
 		return true;
-
 	}
-
+	
+	@Override
 	protected void initialize() {
 		Robot.roller.suck();
 	}
