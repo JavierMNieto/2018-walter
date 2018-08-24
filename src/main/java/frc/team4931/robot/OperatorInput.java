@@ -21,8 +21,8 @@ public class OperatorInput {
     Button rollerSpit = new JoystickButton(stick, 1);
     Button rollerSuck = new JoystickButton(stick, 2);
     
-    rollerSpit.whileHeld(new RollerSpit());
-    rollerSuck.whileHeld(new RollerSuck());
+    rollerSpit.whenPressed(new RollerSpit());
+    rollerSuck.whenPressed(new RollerSuck());
     return stick;
   }
   
