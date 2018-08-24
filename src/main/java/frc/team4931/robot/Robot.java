@@ -22,4 +22,9 @@ public class Robot extends IterativeRobot {
     
     System.out.println("Hello World! Beep Boop!");
   }
+
+  @Override
+  public void robotPeriodic(){
+    roller.checkBeam();
+  }
 }
