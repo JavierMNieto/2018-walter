@@ -15,7 +15,7 @@ public class RollerSpit extends Command{
 	}
 
 	protected void initialize() {
-		Robot.roller.suck();
+		Robot.roller.spit();
 	}
 }
 
