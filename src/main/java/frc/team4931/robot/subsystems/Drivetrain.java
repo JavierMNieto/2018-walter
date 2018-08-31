@@ -1,10 +1,13 @@
 package frc.team4931.robot.subsystems;
 
+
+
 import com.ctre.phoenix.motorcontrol.can.WPI_TalonSRX;
 import edu.wpi.first.wpilibj.SpeedControllerGroup;
 import edu.wpi.first.wpilibj.command.Subsystem;
 import edu.wpi.first.wpilibj.drive.DifferentialDrive;
 import frc.team4931.robot.RobotMap;
+import frc.team4931.robot.commands.DriveWithJoystick;
 
 public class Drivetrain extends Subsystem {
 
@@ -27,7 +30,7 @@ public class Drivetrain extends Subsystem {
 
   @Override
   protected void initDefaultCommand() {
-    // TODO Auto-generated method stub
+	  setDefaultCommand(new DriveWithJoystick());
 
   }
 
