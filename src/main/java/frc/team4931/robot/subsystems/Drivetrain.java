@@ -4,6 +4,7 @@ import com.ctre.phoenix.motorcontrol.can.WPI_TalonSRX;
 import edu.wpi.first.wpilibj.SpeedControllerGroup;
 import edu.wpi.first.wpilibj.command.Subsystem;
 import edu.wpi.first.wpilibj.drive.DifferentialDrive;
+import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import frc.team4931.robot.RobotMap;
 import frc.team4931.robot.commands.DriveWithJoystick;
 
@@ -37,5 +38,10 @@ public class Drivetrain extends Subsystem {
 
   public void arcadeDrive(double speed, double turn) {
     arcadeDrive(speed, turn, 1);
+  }
+   
+  public void log() {
+	SmartDashboard.putNumber("left side motor speed", left.get());
+	SmartDashboard.putNumber("right side motor speed", right.get());
   }
 }
