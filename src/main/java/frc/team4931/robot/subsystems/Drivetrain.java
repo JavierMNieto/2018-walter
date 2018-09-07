@@ -1,7 +1,5 @@
 package frc.team4931.robot.subsystems;
 
-
-
 import com.ctre.phoenix.motorcontrol.can.WPI_TalonSRX;
 import edu.wpi.first.wpilibj.SpeedControllerGroup;
 import edu.wpi.first.wpilibj.command.Subsystem;
@@ -30,8 +28,7 @@ public class Drivetrain extends Subsystem {
 
   @Override
   protected void initDefaultCommand() {
-	  setDefaultCommand(new DriveWithJoystick());
-
+    setDefaultCommand(new DriveWithJoystick());
   }
 
   public void arcadeDrive(double speed, double turn, double multiplier) {
