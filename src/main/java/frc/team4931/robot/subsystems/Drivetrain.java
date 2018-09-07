@@ -39,9 +39,9 @@ public class Drivetrain extends Subsystem {
   public void arcadeDrive(double speed, double turn) {
     arcadeDrive(speed, turn, 1);
   }
-   
+
   public void log() {
-	SmartDashboard.putNumber("left side motor speed", left.get());
-	SmartDashboard.putNumber("right side motor speed", right.get());
+    SmartDashboard.putNumber("left side motor speed", left.get());
+    SmartDashboard.putNumber("right side motor speed", right.get());
   }
 }
