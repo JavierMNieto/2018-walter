@@ -3,6 +3,7 @@ plugins {
     id "edu.wpi.first.GradleRIO" version "2018.06.21"
     id "eclipse"
     id "idea"
+	id "com.diffplug.gradle.spotless" version "3.14.0"
 }
 
 def ROBOT_CLASS = "frc.team4931.robot.Robot"
@@ -23,6 +24,12 @@ deploy {
             debug = getDebugOrDefault(false)
         }
     }
+}
+
+spotless {
+  java {
+    googleJavaFormat()
+  }
 }
 
 // Defining my dependencies. In this case, WPILib (+ friends), CTRE Toolsuite (Talon SRX)
