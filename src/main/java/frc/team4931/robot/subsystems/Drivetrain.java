@@ -1,6 +1,5 @@
 package frc.team4931.robot.subsystems;
 
-
 import edu.wpi.first.wpilibj.SpeedControllerGroup;
 import edu.wpi.first.wpilibj.VictorSP;
 import edu.wpi.first.wpilibj.command.Subsystem;
@@ -31,7 +30,6 @@ public class Drivetrain extends Subsystem {
   @Override
   protected void initDefaultCommand() {
     setDefaultCommand(new DriveWithJoystick());
-
   }
 
   public void arcadeDrive(double speed, double turn, double multiplier) {
@@ -41,9 +39,9 @@ public class Drivetrain extends Subsystem {
   public void arcadeDrive(double speed, double turn) {
     arcadeDrive(speed, turn, 1);
   }
-   
+
   public void log() {
-	SmartDashboard.putNumber("left side motor speed", left.get());
-	SmartDashboard.putNumber("right side motor speed", right.get());
+    SmartDashboard.putNumber("left side motor speed", left.get());
+    SmartDashboard.putNumber("right side motor speed", right.get());
   }
 }
