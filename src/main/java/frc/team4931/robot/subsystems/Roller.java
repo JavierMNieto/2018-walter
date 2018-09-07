@@ -7,7 +7,7 @@ import frc.team4931.robot.RobotMap;
 
 public class Roller extends Subsystem {
   private static final double SUCK_SPEED = 1;
-  private static final double SPIT_SPEED = 1;
+  private static final double SPIT_SPEED = -1;
   private WPI_TalonSRX rollerMotor;
   /** 1 for intake, -1 for expell, 0 for stop */
   private int direction = 0;
@@ -16,7 +16,7 @@ public class Roller extends Subsystem {
 
   public Roller() {
     rollerMotor = new WPI_TalonSRX(RobotMap.ROLLER);
-    beam = new DigitalInput(RobotMap.THROUGH_BEAM);
+    beam = new DigitalInput(RobotMap.THROUGH_BEAM_1); //TODO add THROUGH_BEAM_2
   }
 
   @Override
