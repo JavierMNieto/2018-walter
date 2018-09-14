@@ -11,5 +11,4 @@ public class RobotMap {
 
   public static final int THROUGH_BEAM_1 = 2;
   public static final int THROUGH_BEAM_2 = 3;
-
 }
