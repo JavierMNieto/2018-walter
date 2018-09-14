@@ -18,13 +18,12 @@ public class OperatorInput {
   }
 
   private Joystick makeJoystick() {
-    Joystick stick = new Joystick(0); // FIXME value
-    // TODO bind buttons
+    Joystick stick = new Joystick(0);
 
-    Button rollerSpit = new JoystickButton(stick, 0);
-    Button rollerSuck = new JoystickButton(stick, 1);
-    Button armUp = new JoystickButton(stick, 10);
-    Button armDown = new JoystickButton(stick, 11);
+    Button rollerSpit = new JoystickButton(stick, 1);
+    Button rollerSuck = new JoystickButton(stick, 2);
+    Button armUp = new JoystickButton(stick, 11);
+    Button armDown = new JoystickButton(stick, 12);
 
     rollerSpit.whenPressed(new RollerSpit());
     rollerSpit.whenReleased(new RollerStop());
@@ -34,6 +33,7 @@ public class OperatorInput {
     armUp.whenReleased(new ArmStop());
     armDown.whenPressed(new ArmDown());
     armDown.whenReleased(new ArmStop());
+
     return stick;
   }
 
