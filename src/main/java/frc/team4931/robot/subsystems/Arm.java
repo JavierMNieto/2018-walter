@@ -6,7 +6,7 @@ import frc.team4931.robot.RobotMap;
 
 public class Arm extends Subsystem {
   private static final double UP_SPEED = 1;
-  private static final double DOWN_SPEED = 1;
+  private static final double DOWN_SPEED = -1;
   private WPI_TalonSRX armMotor;
 
   public Arm() {

@@ -26,5 +26,10 @@ public class Robot extends IterativeRobot {
   @Override
   public void robotPeriodic() {
     roller.checkBeam();
+    log();
+  }
+
+  public void log(){
+    drivetrain.log();
   }
 }

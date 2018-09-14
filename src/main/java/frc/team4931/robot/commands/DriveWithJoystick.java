@@ -10,6 +10,7 @@ public class DriveWithJoystick extends Command {
   private Drivetrain drivetrain;
 
   public DriveWithJoystick() {
+    requires(Robot.drivetrain);
     joystick = Robot.operatorInput.getJoystick();
     drivetrain = Robot.drivetrain;
   }
