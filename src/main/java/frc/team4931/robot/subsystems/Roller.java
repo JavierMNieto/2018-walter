@@ -12,18 +12,20 @@ public class Roller extends Subsystem {
   /** 1 for intake, -1 for expell, 0 for stop */
   private int direction = 0;
 
-  private DigitalInput beam;
+  private DigitalInput beam1;
+  private DigitalInput beam2;
 
   public Roller() {
     rollerMotor = new WPI_TalonSRX(RobotMap.ROLLER);
-    beam = new DigitalInput(RobotMap.THROUGH_BEAM_1); //TODO add THROUGH_BEAM_2
+    beam1 = new DigitalInput(RobotMap.THROUGH_BEAM_1);
+    beam2 = new DigitalInput(RobotMap.THROUGH_BEAM_2);
   }
 
   @Override
   protected void initDefaultCommand() {}
 
   public void checkBeam() {
-    if (beam.get() && direction == 1) {
+    if ((beam1.get() || beam2.get()) && direction == 1) {
       stop();
     }
   }
