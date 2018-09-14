@@ -7,9 +7,8 @@ public class RobotMap {
   public static final int RIGHT_BACK = 1;
 
   public static final int ARM = 1;
-  public static final int ROLLER = 0;
+  public static final int ROLLER = 2;
 
   public static final int THROUGH_BEAM_1 = 2;
   public static final int THROUGH_BEAM_2 = 3;
-
 }

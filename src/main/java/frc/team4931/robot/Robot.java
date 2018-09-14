@@ -1,6 +1,8 @@
 package frc.team4931.robot;
 
 import edu.wpi.first.wpilibj.IterativeRobot;
+import edu.wpi.first.wpilibj.command.Scheduler;
+import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import frc.team4931.robot.subsystems.Arm;
 import frc.team4931.robot.subsystems.Drivetrain;
 import frc.team4931.robot.subsystems.Roller;
@@ -14,8 +16,9 @@ public class Robot extends IterativeRobot {
 
   @Override
   public void robotInit() {
-    drivetrain = new Drivetrain();
     operatorInput = new OperatorInput();
+
+    drivetrain = new Drivetrain();
 
     arm = new Arm();
     roller = new Roller();
@@ -29,7 +32,23 @@ public class Robot extends IterativeRobot {
     log();
   }
 
-  public void log(){
+  @Override
+  public void teleopInit() {
+
+  }
+
+  @Override
+  public void teleopPeriodic() {
+    Scheduler.getInstance().run();
+
+  }
+
+  public void log() {
     drivetrain.log();
+
+    SmartDashboard.putNumber("Joy X", operatorInput.getJoystick().getX());
+    SmartDashboard.putNumber("Joy Y", operatorInput.getJoystick().getY());
+    SmartDashboard.putNumber("Joy Z", operatorInput.getJoystick().getZ());
+    SmartDashboard.putNumber("Joy T", operatorInput.getJoystick().getThrottle());
   }
 }
