@@ -16,7 +16,7 @@ public class Roller extends Subsystem {
 
   public Roller() {
     rollerMotor = new WPI_TalonSRX(RobotMap.ROLLER);
-    beam = new DigitalInput(RobotMap.THROUGH_BEAM_1); //TODO add THROUGH_BEAM_2
+    beam = new DigitalInput(RobotMap.THROUGH_BEAM_1); // TODO add THROUGH_BEAM_2
   }
 
   @Override

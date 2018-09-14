@@ -29,7 +29,7 @@ public class Robot extends IterativeRobot {
     log();
   }
 
-  public void log(){
+  public void log() {
     drivetrain.log();
   }
 }
