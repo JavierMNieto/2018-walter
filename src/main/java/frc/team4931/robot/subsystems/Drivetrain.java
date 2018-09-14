@@ -33,7 +33,10 @@ public class Drivetrain extends Subsystem {
   }
 
   public void arcadeDrive(double speed, double turn, double multiplier) {
-    drive.arcadeDrive(Math.copySign(speed * speed, speed) * multiplier, Math.copySign(turn * turn, turn) * multiplier, false);
+    drive.arcadeDrive(
+        Math.copySign(speed * speed, speed) * multiplier,
+        Math.copySign(turn * turn, turn) * multiplier,
+        false);
   }
 
   public void arcadeDrive(double speed, double turn) {

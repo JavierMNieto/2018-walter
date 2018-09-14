@@ -33,21 +33,18 @@ public class Robot extends IterativeRobot {
   }
 
   @Override
-  public void teleopInit() {
-
-  }
+  public void teleopInit() {}
 
   @Override
   public void teleopPeriodic() {
     Scheduler.getInstance().run();
-
   }
 
   public void log() {
     drivetrain.log();
 
-    SmartDashboard.putNumber("Joy X", operatorInput.getJoystick().getX());
     SmartDashboard.putNumber("Joy Y", operatorInput.getJoystick().getY());
+    SmartDashboard.putNumber("Joy X", operatorInput.getJoystick().getX());
     SmartDashboard.putNumber("Joy Z", operatorInput.getJoystick().getZ());
     SmartDashboard.putNumber("Joy T", operatorInput.getJoystick().getThrottle());
   }
